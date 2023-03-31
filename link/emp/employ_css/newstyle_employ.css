@@ -1,0 +1,160 @@
+.twm-w-process-steps-2 .twm-w-pro-top:hover{
+  background: linear-gradient(to right, rgb(31, 118, 172) 0px, rgb(230, 153, 200) 100%);
+box-shadow: rgba(32, 120, 211, 0.6) 0px 8px 29px 0px;
+color: rgb(255, 255, 255);
+}
+
+.blue-btn {
+ margin-top: 10px;
+  width: auto;
+}
+ .blue-btn {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  outline: 0px;
+  border: 0px none;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgb(50, 151, 215) 0px, rgb(31, 120, 211) 100%);
+  box-shadow: rgba(32, 120, 211, 0.6) 0px 8px 29px 0px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  min-width: auto;
+  padding: 6px 25px;
+  width: 150px;
+  line-height: 1.9;
+  
+}
+.icon
+{
+background-image: -webkit-linear-gradient(47deg, rgb(228, 85, 230) 0px, rgb(239, 84, 74) 100%);
+width: 70px;
+height: 70px;
+border-radius: 50%;
+box-shadow: rgba(205, 64, 108, 0.29) 0px 10px 18px 0px;
+position: relative;
+background-image: -webkit-linear-gradient(47deg, rgb(228, 85, 230) 0px, rgb(239, 84, 74) 100%);
+float: left;
+}
+.icon_1
+{
+background-image: -webkit-linear-gradient(47deg, rgb(228, 85, 230) 0px, rgb(239, 84, 74) 100%);
+width: 70px;
+height: 70px;
+border-radius: 50%;
+box-shadow: rgba(205, 64, 108, 0.29) 0px 10px 18px 0px;
+position: relative;
+background-image: -webkit-linear-gradient(47deg, rgb(65, 203, 120) 0px, rgb(69, 226, 220) 100%);
+float: left;
+}
+.icon_2
+{
+background-image:-webkit-linear-gradient(47deg,#d48df6 0,#6e55db 100%);
+width: 70px;
+height: 70px;
+border-radius: 50%;
+box-shadow: rgba(205, 64, 108, 0.29) 0px 10px 18px 0px;
+position: relative;
+
+float: left;
+}
+.iframe{
+    width: 450px; 
+    height: 150vh;
+    
+     background: transparent;
+    box-shadow: 0 8px 29px 0 rgba(210,175,175,0.42);
+    display: block;
+
+}
+
+
+
+
+.card{
+    box-shadow: rgba(32, 120, 211, 0.6) 0px 8px 29px 0px;
+    margin-left: 20px;
+margin-bottom: 40px;
+padding: 100px;
+border-radius: 10px;
+position: relative;
+}
+.card-btn{
+    font-family: Montserrat, sans-serif;
+font-weight: 500;
+font-size: 13px;
+text-transform: uppercase;
+position: relative;
+text-align: center;
+text-decoration: none;
+outline: 0px;
+border: 0px none;
+vertical-align: middle;
+cursor: pointer;
+border-radius: 5px;
+background-image:  -webkit-linear-gradient(47deg, rgb(239, 69, 89) 0px, rgb(238, 130, 25) 100%);
+box-shadow:rgba(239, 139, 117, 0.8) 0px 10px 29px 2px;
+color: rgb(255, 255, 255);
+display: inline-block;
+transition: all 0.4s ease 0s;
+min-width: auto;
+padding: 6px 25px;
+width: 150px;
+line-height: 1.9;
+
+}
+.img_icon{
+    position: absolute;
+display: block;
+max-width: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+transition: all .6s;
+}
+@media only screen  and (max-width: 980px) and (min-width: 800px) {
+  .iframe {
+    margin-left: 105px;
+    /*width: 100vh;*/
+  }
+}
+@media only screen  and (max-width: 800px) and (min-width: 700px) {
+  .iframe {
+    margin-left: -105px;
+    width: 80vh;
+  }
+}
+@media only screen  and (max-width: 700px) and (min-width: 520px) {
+  .iframe {
+    margin-left: -120px;
+    width: 80vh;
+  }
+}
+@media only screen  and (max-width: 520px) and (min-width: 400px) {
+  .iframe {
+    margin-left: -15px;
+    width: 45vh;
+    height: 100vh;
+  }
+}
+@media only screen  and (max-width: 399px) and (min-width: 350px) {
+  .iframe {
+   margin-left: -35px;
+   width: 45vh;
+   height: 100vh;
+  }
+}
+/*@media only screen  and (min-width: 422px) {
+  .iframe {
+    margin-left: 10px;
+    width: 42vh;
+    
+  }
+}*/

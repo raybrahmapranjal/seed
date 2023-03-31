@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive FAQ | Webdevtrick.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+  <h1 class="section__headline">FAQs</h1>
+  <h2 class="FAQs__headline">Basic Things</h2>
+  <ul class="FAQs">
+    <li class="FAQ FAQ--active">
+      <span class="FAQ__title">Is HTML a programming language?</span>
+      <div class="FAQ__answer">No, HTML is not a programming language. The "M" stands for "Markup". Generally, a programming language allows you to describe some sort of process of doing something, whereas HTML is a way of adding context and structure to text.</div>
+    </li>
+    <li class="FAQ">
+      <span class="FAQ__title">What is Canvas in HTML?</span>
+      <div class="FAQ__answer">The canvas element is part of HTML5 and allows for dynamic, scriptable rendering of 2D shapes and bitmap images.</div>
+    </li>
+    <li class="FAQ">
+      <span class="FAQ__title">IS inline CSS is bad?</span>
+      <div class="FAQ__answer">It depends, But A separate stylesheet is usually the better choice.</div>
+    </li>
+  </ul>  
+  
+    <h2 class="FAQs__headline">JS Related Questions</h2>
+  <ul class="FAQs">
+    <li class="FAQ">
+      <span class="FAQ__title">What is jQuery?</span>
+      <div class="FAQ__answer">jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.[2] It is free, open-source software using the permissive MIT License..</div>
+    </li>
+    <li class="FAQ">
+      <span class="FAQ__title">JavaScript can be used to validate forms?</span>
+      <div class="FAQ__answer">JavaScript provides a way to validate form's data on the client's computer before sending it to the web server.</div>
+    </li>
+    <li class="FAQ">
+      <span class="FAQ__title">Is JS hard to learn?</span>
+      <div class="FAQ__answer">JavaScript is so hard to learn because it seemingly violates a ton of the rules you've previously learned while working with a different programming language.</div>
+    </li>
+    <li class="FAQ">
+      <span class="FAQ__title">What is React JS?</span>
+      <div class="FAQ__answer">React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.</div>
+    </li>
+    <li class="FAQ FAQ">
+      <span class="FAQ__title"> IS angular is similar to JS?</span>
+      <div class="FAQ__answer">No, JavaScript is a programming language whereas AngularJS is an open source framework and based on MVC architecture. JavaScript is mainly written for websites to run in the client's browser.</div>
+    </li>
+  </ul>  
+  
+    <h2 class="FAQs__headline">Other questions</h2>
+  <ul class="FAQs">
+    <li class="FAQ">
+      <span class="FAQ__title">What is Search Engine Optimization?</span>
+      <div class="FAQ__answer">Search engine optimization is the process of increasing the quality and quantity of website traffic by increasing the visibility of a website or a web page to users of a web search engine. SEO refers to the improvement of unpaid results and excludes direct traffic/visitors and the purchase of paid placement.</div>
+
+    </li>
+    <li class="FAQ">
+      <span class="FAQ__title">Can paid ads imporve SERP?</span>
+      <div class="FAQ__answer">PPC ads like Google Ads are paid online advertisements which appear next to relevant searches and other content on the web. Running a Google Ads campaign does not help your SEO rankings, despite some myths and claims.</div>
+    </li>
+    <li class="FAQ">
+      <span class="FAQ__title">What is organic SEO?</span>
+      <div class="FAQ__answer">Organic traffic. The term “organic traffic” is used for referring to the visitors that land on your website as a result of unpaid (“organic”) search results. ... The branch of online marketing that focuses directly on improving organic traffic is called SEO - search engine optimization.</div>
+    </li>
+  </ul>
+  
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="function.js"></script>
+<script type="text/javascript">
+  // Code By Webdevtrick ( https://webdevtrick.com )
+$('body').delegate('.FAQ', 'click', function(){
+  $('.FAQ').removeClass('FAQ--active');
+  $(this).addClass('FAQ--active');
+});
+</script>
+
+</body>
+</html>

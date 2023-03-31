@@ -1,0 +1,21 @@
+<!-- JAVASCRIPT  FILES ========================================= --> 
+<script  src="employ_js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
+<script  src="employ_js/popper.min.js"></script><!-- POPPER.MIN JS -->
+<script  src="employ_js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
+<script  src="employ_js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
+<script  src="employ_js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+<script  src="employ_js/counterup.min.js"></script><!-- COUNTERUP JS -->
+<script  src="employ_js/waypoints-sticky.min.js"></script><!-- STICKY HEADER -->
+<script  src="employ_js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+<script  src="employ_js/imagesloaded.pkgd.min.js"></script><!-- MASONRY  -->
+<script  src="employ_js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+<script  src="employ_js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
+<script  src="employ_js/lc_lightbox.lite.js" ></script><!-- IMAGE POPUP -->
+<script  src="employ_js/bootstrap-select.min.js"></script><!-- Form js -->
+<script  src="employ_js/dropzone.js"></script><!-- IMAGE UPLOAD  -->
+<script  src="employ_js/jquery.scrollbar.js"></script><!-- scroller -->
+<script  src="employ_js/bootstrap-datepicker.js"></script><!-- scroller -->
+<script  src="employ_js/jquery.dataTables.min.js"></script><!-- Datatable -->
+<script  src="employ_js/dataTables.bootstrap5.min.js"></script><!-- Datatable -->
+<script  src="employ_js/chart.js"></script><!-- Chart -->
+<script  src="employ_js/custom.js"></script><!-- CUSTOM FUCTIONS  -->

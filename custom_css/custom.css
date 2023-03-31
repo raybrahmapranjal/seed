@@ -1,0 +1,38 @@
+.city_top_navigation{
+	background-image: url('../images/banner.webp');
+}
+form.example input[type=text] {
+ padding: 7px;
+font-size: 17px;
+border: 3px solid #2196f3;
+float: left;
+width: 80%;
+background: #fff;
+color: black;
+margin-top: 50px;
+}
+
+/* Style the submit button */
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -1,0 +1,65 @@
+	@media (min-width: 989px)  {
+.hero-area2.hero-area3 {
+/*	display: none;*/
+/*width: 6912px;
+height: 3456;*/
+}
+
+
+	}
+	  @media (max-width: 2089px) {
+  
+ .hero-area2.hero-area2{
+ 	
+ background-position: 80% 10px;
+ }
+ .hero-area .content .content {
+/* 	display: none;*/
+ }
+ .hero-area2.hero-area3 {
+    
+    background-position-x: 0%;
+    background-position-y: 10%;
+    background-repeat: repeat;
+    background-size: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+.hero-area2 {
+  position: relative;
+ 
+  position: relative;
+  background: #070b28;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.hero-area2.hero-text .content .title {
+  color: #1f0644;
+  text-transform: uppercase;
+  font-size: 20px;
+  -webkit-text-stroke: 3px #fb3ab4;
+  -moz-text-stroke: 3px #fb3ab4;
+  margin-bottom: -325px;
+  margin-top: 8rem;
+}
+.hero-area .content .content .title {
+  display: block;
+}
+.about-section .ar{
+  display: none;
+}
+
+}
+@media (min-width: 400px) and (max-width: 1154px) {
+  .hero-area2 .content .content .subtitle {
+    font-size: 20px;
+  }
+  
+}
