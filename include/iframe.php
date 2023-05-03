@@ -13,7 +13,7 @@
 								
 								
 							</div>
-								<iframe src="include/news_scroll.php" class="scrollbar" id="style-1"  style="height: 80vh;  "  ></iframe>
+								<iframe src="include/news_scroll.php" class="scrollbar" id="style-1"  style="height: 70vh;  "  ></iframe>
 							</div>
 						</div>
 						<?php 
@@ -43,7 +43,7 @@
 						</div>
 						<?php }}}?>
 						<div class="col-md-8 col-sm-6 col-xs-12">
-							<div class="city_visit_text2">
+							<div class="city_visit_text">
 								<h3>ADDRESS</h3>
 								
 								<div class="ciy_jobs_caption2">

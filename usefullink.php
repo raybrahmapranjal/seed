@@ -4,44 +4,45 @@
         <div class="wrapper"> 
 			 <?php include("include/navbar.php"); ?>
 			
-			<!--CITY TOP WRAP START--> 
-	<div class="city_top_wrap">
-		<div class="container-fluid">
-        <div class="sab_banner overlay">
+			<!--CITY TOP WRAP START-->
+             <div class="sab_banner overlay">
                 <div class="container">
                     <div class="sab_banner_text">
-                        <h2>Useful Links</h2>
+                        <h2>USEFUL LINKS</h2>
                         <ul class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                          <li class="breadcrumb-item active">Useful Link</li>
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active">USEFUL LINKS</li>
                         </ul>
-                        <li class="views-row views-row-1 views-row-odd views-row-first"> 
-                        <div class="city_document_list">
-										
-										<ul>
-											<li><a href="#"><i class="fa icon-document"></i>link 1</a></li>
-                                            <li><a href="#"><i class="fa icon-document"></i>link 1</a></li>
-                                            <li><a href="#"><i class="fa icon-document"></i>link 1</a></li>
-                                            <li><a href="#"><i class="fa icon-document"></i>link 1</a></li>
-                                            <li><a href="#"><i class="fa icon-document"></i>link 1</a></li>
-                                            <li><a href="#"><i class="fa icon-document"></i>link 1</a></li>
-                                            <li><a href="#"><i class="fa icon-document"></i>link 1</a></li>
-										
-										</ul>
-										
-									</div>
+                    </div>
+                </div>
+            </div> 
+            <!-- CITY EVENT2 WRAP START-->
+            
+            <div class="city_event2_wrap">
+                <div class="container">
+                    <div class="container">
+                        <div class="sab_banner_text">
+                            <h5>Important Links</h5>
+                            
+                             
+                            <div class="city_document_list">
+                                            
+                            <ul>
+                                <li><a href="https://www.msde.gov.in/"><i class="fa icon-document"></i>Ministry of Skill Development and Entrepreneurship</a></li>
+                                <li><a href="https://skill.assam.gov.in/"><i class="fa icon-document"></i>Government of Assam Skill Employment and Entrepreneurship</a></li>
+                                <li><a href="https://www.pmkvyofficial.org/"><i class="fa icon-document"></i>Pradhan Mantri Kaushal Vikash Yojna(PMKVY)</a></li>
+                                <li><a href="https://bodoland.gov.in/"><i class="fa icon-document"></i>Bodoland Web Portal</a></li>
+                                
+                            
+                            </ul>
+                                            
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+          
   
-			
-			
-		</div>
-	</div>
-	<!--CITY TOP WRAP END-->
-           
-			
-			
 			<?php include("include/footer.php") ?>
 		</div>
 		 <!--WRAPPER END-->

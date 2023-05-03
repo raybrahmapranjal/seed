@@ -21,6 +21,7 @@ $readuser20 = $crud->Read("tenders","1");
 $readuser21 = $crud->Read("announcements","1");
 $readuser22 = $crud->Read("schemes","1");
 $readuser23 = $crud->Read("honourable","1");
+$readuser24 = $crud->Read("sliderphotos","1");
 
 
 ?>
@@ -32,7 +33,7 @@ $readuser23 = $crud->Read("honourable","1");
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SEED|BTR</title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -49,7 +50,7 @@ $readuser23 = $crud->Read("honourable","1");
 		<!-- Pretty Photo CSS -->
         <link href="css/jquery.bxslider.css" rel="stylesheet">
 		<!-- Pretty Photo CSS -->
-        <link href="css/style5.css" rel="stylesheet">
+        <link href="../css/style5.css" rel="stylesheet">
 		<!-- Pretty Photo CSS -->
         <link href="css/demo.css" rel="stylesheet">
 		<!-- Pretty Photo CSS -->
@@ -67,7 +68,7 @@ $readuser23 = $crud->Read("honourable","1");
         <link href="svg-icon.css" rel="stylesheet">
         <!-- Color CSS -->
         <link href="css/color.css" rel="stylesheet">
-        <link href="custom_css/custom.css" rel="stylesheet">
+        <link href="../custom_css/custom.css" rel="stylesheet">
         <!-- Responsive CSS -->
         <link href="css/responsive.css" rel="stylesheet">
         <link href="css/newstyle.css" rel="stylesheet">

@@ -24,7 +24,7 @@ if(isset($_POST['name']) && isset($_POST['email'])){
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
         $mail->Username = "smartbtrofficial@gmail.com";
-        $mail->Password = 'mlohekfoppwhvmcr';
+        $mail->Password = '@janumbaha321';
         $mail->Port = 465;
         $mail->SMTPSecure = "ssl";
 
@@ -43,8 +43,9 @@ if(isset($_POST['name']) && isset($_POST['email'])){
         }
         else
         {
-            $_SESSION["errorMessage"]= "Your email not sent..sorry!";
-            echo '<script>window.location.assign("contact.php");</script>';
+            echo "{$mail->ErrorInfo}";
+            // $_SESSION["errorMessage"]= "Your email not sent..sorry!";
+            // echo '<script>window.location.assign("contact.php");</script>';
         }
 
     // exit(json_encode(array("status" => $status, "response" => $response)));

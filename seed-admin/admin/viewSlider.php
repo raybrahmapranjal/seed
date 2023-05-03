@@ -1,9 +1,5 @@
 <?php include("include/head.php"); ?>
-<!-- top section -->
 <?php include("include/top_section.php"); ?>
-
-
-
 		<!-- start color quick setting -->
 		<div class="settingSidebar">
 			<a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
@@ -83,38 +79,35 @@
 			</div>
 		</div>
 		<!-- end color quick setting -->
-		<!-- sidebar -->
-		<?php include("include/sidebar.php"); ?>
-
-		<!-- sidebar ends -->
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			
+			<?php include("include/Sidebar.php"); ?>
+			<!-- end sidebar menu -->
 			<!-- start page content -->
 			<div class="page-content-wrapper">
 				<div class="page-content">
 					<div class="page-bar">
 						<div class="page-title-breadcrumb">
 							<div class=" pull-left">
-								<div class="page-title">Dashboard</div>
-								<?php 
-            	if (isset($_SESSION['message'])) {
-            		echo $_SESSION['message'];
-            		unset($_SESSION['message']);
-            	}
-            ?>
+								<div class="page-title">Home Slider Photos</div>
+								 <?php 
+		            	if (isset($_SESSION['message'])) {
+		            		echo $_SESSION['message'];
+		            		unset($_SESSION['message']);
+		            	}
+		            ?>
 							</div>
 							<ol class="breadcrumb page-breadcrumb pull-right">
 								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
 										href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
 								</li>
-								<li class="active">Dashboard</li>
+								
+								<li class="active">View Home Slider Photos</li>
 							</ol>
 						</div>
 					</div>
-					
-					
-					
-					
-					
-					<!-- start new student list -->
 					<div class="row">
 						<div class="col-md-12 col-sm-12">
 							<div class="card card-box">
@@ -126,9 +119,7 @@
 				                            <tr>
 				                                <th>ID</th>
 				                                <th>Image</th>
-				                                <th>Head</th>
-				                                <th>Title</th>
-				                                <th>Description</th>
+				                               
 				                                <th>uploaded date</th>
 				                                <th>Action</th>
 				                                
@@ -139,32 +130,29 @@
 											<tr>
 												<th>ID</th>
 				                                <th>Image</th>
-				                                <th>Head</th>
-				                                <th>Title</th>
-				                                <th>Description</th>
+				                                
 				                                <th>uploaded date</th>
 				                                <th>Action</th>
 											</tr>
 										</tfoot>
 										 <tbody>
 										<?php 
-                                        if ($readuser) {
+                                        if ($readuser23) {
                                         	$n=0;
-                                        	foreach ($readuser as $aboutKey) { ?>
+                                        	foreach ($readuser23 as $sliderphotos) { ?>
                                         	<tr>
 	                                        	<td><?php echo ++$n; ?></td>	
 	                                        	
-	                                        	<td><img width="100px" src="<?php echo $aboutKey['image'];?>"></td>
-	                                        	<td><?php echo $aboutKey['head'] ;?></td>	
-	                                        	<td><?php echo $aboutKey['title'] ;?></td>	
-	                                        	<td><?php echo $aboutKey['description'] ;?></td>	
-	                                        	<td><?php echo $aboutKey['date_uploaded'];?></td>	
-	                                        	<!-- <td><a class="tblDelBtn" tabindex="0" aria-controls="example" type="button" a href="#" data-id="<?php echo $aboutKey['id'];?>"  data-target="#model4" data-toggle="modal" class="tblEditBtn"><span><i class="fa fa-pencil"></i> | <i class="fa fa-trash-o"></i></span></a>
+	                                        	<td><img width="100px" src="<?php echo $sliderphotos['image'];?>"></td>
+	                                        	
+	                                        		
+	                                        	<td><?php echo $sliderphotos['date_uploaded'];?></td>	
+	                                        	<!-- <td><a class="tblDelBtn" tabindex="0" aria-controls="example" type="button" a href="#" data-id="<?php echo $photos['id'];?>"  data-target="#model4" data-toggle="modal" class="tblEditBtn"><span><i class="fa fa-pencil"></i> | <i class="fa fa-trash-o"></i></span></a>
 												</td> -->
-												<td><a href="#"  data-id="<?php echo $aboutKey['id'];?>"  data-target="#model4" data-toggle="modal" class="tblEditBtn">
+												<td><a href="<?php echo $sliderphotos['id'];?>"  data-id="<?php echo $sliderphotos['id'];?>"  data-target="#model4" data-toggle="modal" class="tblEditBtn">
 																<i class="fa fa-pencil"></i>
 															</a>
-															<a href="javascript:void(0)"  data-id="<?php echo $aboutKey['id'];?>"  data-target="#model4" data-toggle="modal" class="tblEditBtn">
+															<a href="javascript:void(0)"  data-id="<?php echo $sliderphotos['id'];?>"  data-target="#model4" data-toggle="modal" class="tblEditBtn">
 																<i class="fa fa-trash-o"></i>
 															</a>
 												</td>
@@ -191,14 +179,14 @@
 										<ul class="nav customtab nav-tabs" role="tablist">
 											<li class="nav-item"><a href="#tab1" class="nav-link active"
 													data-bs-toggle="tab">Edit
-													Data</a></li>
+													Slider Photos</a></li>
 											
 										</ul>
 									</div>
 						      	
 						        	<button type="button" data-dismiss="modal" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						      	</div>
-					      	<form form action="form/edit-abouts.php" method="post" enctype="multipart/form-data">
+					      	<form action="form/edit_sliderPhotos.php" method="post" enctype="multipart/form-data">
 					      	<div class="modal-body">
 						        <div class="col-sm-12">
 									<div class="card-box">
@@ -225,35 +213,6 @@
 													</div>
 												</div>
 											</div>
-												
-											
-											
-											<div class="col-lg-6 p-t-20">
-												<div
-													class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
-													<label >Head</label>
-													<input class="mdl-textfield__input" id="head"    name="head" type="text" >
-													
-												</div>
-											</div>
-											<div class="col-lg-6 p-t-20">
-												<div
-													class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
-													<label>Title</label>
-													<input class="mdl-textfield__input" id="title"  name="title" type="text" 
-														id="title">
-													
-												</div>
-											</div><div class="col-lg-6 p-t-20">
-												<div
-													class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
-													<label >Description</label>
-													<input class="mdl-textfield__input" name="description" type="text" 
-														id="description">
-													
-												</div>
-											</div>
-											
 											<div class="col-lg-6 p-t-20">
 												<div
 													class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
@@ -264,6 +223,9 @@
 												</div>
 												
 											</div>
+										
+											
+											
 											<div class="col-lg-12 p-t-20 text-center">
 												
 												<button type="submit" name="formSubmit"
@@ -334,20 +296,16 @@
       $.ajax({
          type: "POST", 
          dataType: "json", 
-         url: "xhr/fetch-details.php", 
+         url: "xhr/fetch_sliderphotos.php", 
          data: {
             dataId:dataId         
          },
          success: function(response){
-         	var keyed = response.head.replace(/<br ?\/?>/g,"\n");
-    		$("#head").val(keyed);
-    		var keyed = response.title.replace(/<br ?\/?>/g,"\n");
-    		$("#title").val(keyed);
-    		var keyed = response.description.replace(/<br ?\/?>/g,"\n");
-    		$("#description").val(keyed);
+         	
+    		
     		var keyed = response.date_uploaded.replace(/<br ?\/?>/g,"\n");
     		$("#date_uploaded").val(keyed);
-    		$('#deletePortfolio').attr("href","form/delete-portfolio.php?id="+dataId);
+    		$('#deletePortfolio').attr("href","form/delete_sliderPhotos.php?id="+dataId);
 
             $('#responseImage').attr("src",response.image);
             

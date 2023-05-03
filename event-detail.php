@@ -57,9 +57,9 @@ $id=$_GET['id'];
 								<!--CITY HEALTH TEXT START-->
 								<div class="city_health2_text">
 									<!--SECTION HEADING START-->
-									<div class="section_heading border">
+									<div class="event_detail_text">
 										
-										<h2><?php echo $head;?></h2>
+										<h4><?php echo $head;?></h4>
 									</div>
 									<!--SECTION HEADING END-->
 									<p align="justify"><?php echo $description;?></p>

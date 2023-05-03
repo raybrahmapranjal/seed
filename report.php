@@ -58,7 +58,7 @@
                                      ?>
                                             <td><?php echo ++$n; ?></td> 
                                             <td><?php echo $news['news'] ;?></td> 
-                                            <td><a href="seed-admin/admin/<?php echo $news['pdf'] ;?>"><i class="fa fa-file-pdf-o" style="color:red"> view</i></a></td>
+                                            <td><a href="seed-admin/admin/<?php echo $news['pdf'] ;?>" ><i class="fa fa-file-pdf-o" style="color:red"> view</i></a></td>
                                             <td><a href="seed-admin/admin/<?php echo $news['pdf'] ;?>" download><i class="fa fa-download"> pdf</i></a></td>
                                         </tr>
                                        

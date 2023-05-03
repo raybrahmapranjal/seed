@@ -1,6 +1,14 @@
 
  <!--CITY REQUEST WRAP START -->
- 
+ <?php 
+$readuser7 = $crud->Read("sliderphotos","1 ORDER BY `id` ASC ");
+
+?>
+	<?php 
+        if($readuser7){
+        $image=$readuser7[0]['image'];
+
+     ?>
 			<div class="city_requset_wrap">
 				<div class="container">
 					<div class="row">
@@ -11,15 +19,19 @@
 								
 						  	<div class="slider">
 		                        <div class="slider-items">
-						            <div  class="item active">
-						             <img src="slider/img/5.jpg" />
+		                        	
+						            <div  class="item active ">
+						             <img style="width: 1000px;height: 300px" src="../seed/seed-admin/admin/<?php echo $image;?>" />
 						            </div>
+	<?php }?>
+						           <?php 
+                                        if ($readuser24) {
+                                            $n=0;
+                                            foreach ($readuser24 as $honour) { ?>
 						            <div  class="item">
-						             <img src="slider/img/6.jpg" />
+						             <img style="width: 1000px;height: 300px" src="../seed/seed-admin/admin/<?php echo $honour['image'];?>" />
 						            </div>
-						            <div  class="item">
-						             <img src="slider/img/a.jpg" />
-						            </div> 
+						              <?php }}?>	
 							    </div>
 						        <!-- slider controls -->
 						          <div class="left-slide"><</div>
@@ -37,7 +49,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			
 				
 
 <script src="slider/js/slider1.js"></script>

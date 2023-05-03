@@ -42,13 +42,13 @@
 							<a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown"
 								data-close-others="true">
 								<img alt="" class="img-circle " src="../assets/img/user.png" />
-								<span class="username username-hide-on-mobile"> Sneha
+								<span class="username username-hide-on-mobile"> <?php echo $_SESSION['this_user_username']; ?>
 							</a>
 							<ul class="dropdown-menu dropdown-menu-default">
-								<li>
+								<!-- <li>
 									<a href="user_profile.html">
 										<i class="icon-user"></i> Profile </a>
-								</li>
+								</li> -->
 								
 								<li class="divider"> </li>
 								

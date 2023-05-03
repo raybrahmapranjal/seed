@@ -50,7 +50,7 @@
         
         <!--Custom JavaScript-->
     	<script src="js/custom.js"></script>
-		<script>document.documentElement.className = 'js';</script>
+		
     </body>
 
 </html>

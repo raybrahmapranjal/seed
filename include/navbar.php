@@ -7,7 +7,7 @@
 					<div class="container-fluid">
 						<div class="city_top_logo">
 							
-								<h1><a href="index.php"><img style="max-width: 260px;" src="images/seed4.png" alt=""></a></h1>
+								<h1><a href="index.php"><img style="max-width: 140px; margin-top: -40px" src="images/pr.png" alt=""></a></h1>
 						
 						</div>
 							<!-- <div class="city_top_logo2">
@@ -25,7 +25,7 @@
 					            </div>
 					            <div class="icon twitter">
 						            <div class="tooltip">
-						               (70021545558)
+						               (7002154555)
 						            </div>
 						            <span><i class="fa fa-phone"></i></span>
 						        </div>

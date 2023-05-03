@@ -1,4 +1,4 @@
-    <div class="container-fluid">
+    <div class="container">
 	    <div class="city_project_mansory">
 		    <ul id="filterable-item-filter-1">
 			    <li><a class="btn-hover" data-value="all" href="press.php">News</a></li>

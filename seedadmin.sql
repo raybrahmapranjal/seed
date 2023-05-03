@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 31, 2023 at 09:56 AM
+-- Generation Time: Apr 04, 2023 at 10:27 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -129,9 +129,9 @@ CREATE TABLE `announcements` (
 --
 
 INSERT INTO `announcements` (`id`, `image`, `head`, `description`, `date_uploaded`) VALUES
-(1, '', '', 'NCVET invites application for the post of Director (on Deputation) in NCVET', '2023-03-06'),
-(2, '', '', 'Inviting participants for GeM bid for reviewing Cyber Security framework', '2023-03-06'),
-(3, '', '', 'Vacancy Circular for Engagement of Consultant in National Skill Development Fund/Trust on contractual basis', '2023-03-16');
+(1, 'images/pdf/99bef4b8cd34dd3c14c2fead14638c33sample.pdf', 'hetrh', 'NCVET invites application for the post of Director (on Deputation) in NCVET', '2023-03-31'),
+(2, 'images/pdf/6ec0af79a9c7d76783fe030b2daa0af0sample.pdf', 'drhtedr', 'Inviting participants for GeM bid for reviewing Cyber Security framework', '2023-03-31'),
+(3, 'images/pdf/9214506bcac018f886c79e90c8a5d8bbsample.pdf', 'rdfth', 'Vacancy Circular for Engagement of Consultant in National Skill Development Fund/Trust on contractual basis', '2023-03-31');
 
 -- --------------------------------------------------------
 
@@ -351,7 +351,10 @@ INSERT INTO `login_details` (`id`, `user_id`, `os`, `browser`, `ip`, `login_date
 (88, 1, 'Windows 10', 'Chrome', '::1', '2023-03-29', '15:33:17'),
 (89, 1, 'Windows 10', 'Chrome', '::1', '2023-03-29', '15:39:37'),
 (90, 1, 'Windows 10', 'Chrome', '::1', '2023-03-29', '15:47:38'),
-(91, 1, 'Windows 10', 'Chrome', '::1', '2023-03-29', '16:11:06');
+(91, 1, 'Windows 10', 'Chrome', '::1', '2023-03-29', '16:11:06'),
+(92, 1, 'Windows 10', 'Firefox', '127.0.0.1', '2023-03-31', '14:07:45'),
+(93, 1, 'Windows 10', 'Firefox', '127.0.0.1', '2023-04-04', '11:29:46'),
+(94, 1, 'Windows 10', 'Firefox', '127.0.0.1', '2023-04-04', '11:40:52');
 
 -- --------------------------------------------------------
 
@@ -769,10 +772,10 @@ CREATE TABLE `newsticker` (
 --
 
 INSERT INTO `newsticker` (`id`, `pdf`, `news`, `date_uploaded`) VALUES
-(2, '', 'Computer Training Reports', '2023-03-06'),
-(3, '', 'Online training classes for Mechanics', '2023-02-01'),
-(4, '', 'Monthly Reports of SEED Mission', '2023-02-01'),
-(5, '', 'Mechanicial Training Reports', '2023-02-02');
+(2, 'images/pdf/15091da35529073bec2c921c567c3708sample.pdf', 'Computer Training Reports', '2023-03-31'),
+(3, 'images/pdf/9ceb4e783d67c72ccaf6bbf4b6e85a20sample.pdf', 'Online training classes for Mechanics', '2023-03-31'),
+(4, 'images/pdf/4396ab87e50219d8ed0cc3f89af5de46sample.pdf', 'Monthly Reports of SEED Mission', '2023-03-31'),
+(5, 'images/pdf/1f30b5f4e0ffee0e5a70842c6285b9b5sample.pdf', 'Mechanicial Training Reports', '2023-03-31');
 
 -- --------------------------------------------------------
 
@@ -840,7 +843,8 @@ INSERT INTO `photos` (`id`, `image`, `description`, `date_uploaded`) VALUES
 (7, 'images/index/2c98463cec3ee7799089ad91af4230d5events9.jpg', 'Ranoj Pegu in Kokrajhar, BTR', '2023-03-29'),
 (8, 'images/index/af1b784d8b3262c84c912a221a2e09edevents8.jpg', 'Cabinet meeting of BTR authorities', '2023-03-29'),
 (9, 'images/index/cf1c0023c0bdb86bd08c618cd94fc61c8e0e5b985bc918702b5dab6c735dca07Promod-Boro.jpg', 'BTR Chief giving interview', '2023-02-24'),
-(10, 'images/index/4c3f4f7b5c76804eb447805af37ad8290560004bdec21d31e221f02f8813874912.jpeg', 'Skill training program held at Kokrajhar', '2023-02-24');
+(10, 'images/index/4c3f4f7b5c76804eb447805af37ad8290560004bdec21d31e221f02f8813874912.jpeg', 'Skill training program held at Kokrajhar', '2023-02-24'),
+(12, 'images/index/5989f3d89c95ebf88517154b4903e8344.jpg', '', '2023-04-04');
 
 -- --------------------------------------------------------
 
@@ -964,7 +968,7 @@ CREATE TABLE `seedmission` (
 --
 
 INSERT INTO `seedmission` (`id`, `image`, `head`, `title`, `description`, `date_uploaded`) VALUES
-(0, 'images/index/eb468aeda149eed8fcb0d23ffa4d1707Our-mission.jpg', 'Our mission', 'Mission', '\"Engaging young people including students and enhancing their Technical, Cognitive, Behavioural, Digital, Vocational and Life Skill for 21st century skill requirements early in their life so that they', '2023-03-29');
+(0, 'images/index/eb468aeda149eed8fcb0d23ffa4d1707Our-mission.jpg', 'Our mission', 'Mission', '\"Engaging young people including students and enhancing their Technical, Cognitive, Behavioural, Digital, Vocational and Life Skill for 21st century skill requirements early in their life so that they can design strategy for succes and ensure decent jobs, self employment and bring sensitive changes in the region.', '2023-03-29');
 
 -- --------------------------------------------------------
 
@@ -1011,6 +1015,27 @@ CREATE TABLE `seedvision` (
 
 INSERT INTO `seedvision` (`id`, `image`, `head`, `title`, `description`, `date_uploaded`) VALUES
 (3, 'images/index/d7856f43696d10a5f45b7a6bc3a8d9dcvison.jpg', 'Our Vision', '(Skill Employment and Enterpreneur Development)', '\"Endow young people of BTR with skills for employment decent works and entrepreneurship for sustainable development\".', '2023-03-29');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sliderphotos`
+--
+
+CREATE TABLE `sliderphotos` (
+  `id` int(200) NOT NULL,
+  `image` varchar(200) NOT NULL,
+  `date_uploaded` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `sliderphotos`
+--
+
+INSERT INTO `sliderphotos` (`id`, `image`, `date_uploaded`) VALUES
+(2, 'images/index/0511946f9a7b73ddcdb0548fa3b35bca4.jpg', '2023-04-04'),
+(3, 'images/index/def4cb1030d20ba391c92bfc4c18d3046.jpg', '2023-04-04'),
+(4, 'images/index/10a22969645b2988cbd365ac64f0ef5aa.jpg', '2023-04-04');
 
 -- --------------------------------------------------------
 
@@ -1079,11 +1104,11 @@ CREATE TABLE `tenders` (
 --
 
 INSERT INTO `tenders` (`id`, `image`, `tenderno`, `title`, `date_uploaded`) VALUES
-(2, '', 'NHM-32031/4/2021-Const-NHM/Pt 34/69', 'Establishment of Proposed 6 bedded ward at various SHCs and PHCs of Assam under ECRP II NHM Assam Group 193 5 nos scheme in Nalbari district.', '2023-03-29'),
-(3, '', '234/ACB-AS-2023', 'Construction of Dhola-Sadia Ghats bridges in length of 9.15 km', '2023-03-29'),
-(4, '', 'A-12026/01/2020-E.II (28597)', 'Construction of new Brahmputra bridge (AS-28) in length of 0.05 km in Kamrup district', '2023-03-29'),
-(5, '', '234/ACB-AS-2023', 'Road upgradation of Nalbari-Bijini NH-31 road in length of 27.3 km in East West Corridor under NHDP-II', '2023-03-29'),
-(6, '', 'A-12026/01/2020-E.II (28597)', 'Laying of Bogibeel rail-cum-road bridge over Brahmaputra river', '2023-03-29');
+(2, 'images/pdf/c8f91cc74bd74ccaf6d96a799579c1d4sample.pdf', 'NHM-32031/4/2021-Const-NHM/Pt 34/69', 'Establishment of Proposed 6 bedded ward at various SHCs and PHCs of Assam under ECRP II NHM Assam Group 193 5 nos scheme in Nalbari district.', '2023-03-31'),
+(3, 'images/pdf/e51aef93e8d4ce53352d74e54491e3f3sample.pdf', '234/ACB-AS-2023', 'Construction of Dhola-Sadia Ghats bridges in length of 9.15 km', '2023-03-31'),
+(4, 'images/pdf/57433262158105b241b7890ece77dc2fsample.pdf', 'A-12026/01/2020-E.II (28597)', 'Construction of new Brahmputra bridge (AS-28) in length of 0.05 km in Kamrup district', '2023-03-31'),
+(5, 'images/pdf/4fe35c900d4b82d39832232065a14263sample.pdf', '234/ACB-AS-2023', 'Road upgradation of Nalbari-Bijini NH-31 road in length of 27.3 km in East West Corridor under NHDP-II', '2023-03-31'),
+(6, 'images/pdf/de5e1089f2d771439b91d232dcca98b1sample.pdf', 'A-12026/01/2020-E.II (28597)', 'Laying of Bogibeel rail-cum-road bridge over Brahmaputra river', '2023-03-31');
 
 -- --------------------------------------------------------
 
@@ -1256,6 +1281,12 @@ ALTER TABLE `seedvision`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `sliderphotos`
+--
+ALTER TABLE `sliderphotos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `strategy`
 --
 ALTER TABLE `strategy`
@@ -1341,7 +1372,7 @@ ALTER TABLE `honourable`
 -- AUTO_INCREMENT for table `login_details`
 --
 ALTER TABLE `login_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 
 --
 -- AUTO_INCREMENT for table `logo_admin`
@@ -1377,7 +1408,7 @@ ALTER TABLE `participants`
 -- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `press`
@@ -1414,6 +1445,12 @@ ALTER TABLE `seedspotlight`
 --
 ALTER TABLE `seedvision`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `sliderphotos`
+--
+ALTER TABLE `sliderphotos`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `strategy`

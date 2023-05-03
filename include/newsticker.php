@@ -49,7 +49,7 @@ $read = $crud->Read("newsticker","1");
                                        
                                        <!-- <td><img src="../seed-admin/admin/<?php echo $news['image'] ;?>" class="news" height="50vh" width="60" class="img-circle" /></td> -->
 
-                                       <td class="news"> <i class="fa fa-dot-circle" style="font-size:10px;color:green"></i> <?php echo $news['news'] ;?> <a href="../report.php" target="self" style="color:red;font-style: italic;">click here</a>  <span style="font-size: 13px; color: blue; font-weight: bold;font-family: 'Montserrat', sans-serif "> (<?php echo $newDate ;?>)</span> </td>
+                                       <td class="news"> <i class="fa fa-dot-circle" style="font-size:10px;color:green"></i> <?php echo $news['news'] ;?> <a href="../report.php" target="self" style="color:red;font-style: bold;">click here</a>  <span style="font-size: 13px; color: blue; font-weight: bold;font-family: 'Montserrat', sans-serif "> (<?php echo $newDate ;?>)</span> </td>
                                        
                                     </tr>
                                     <?php }}?>

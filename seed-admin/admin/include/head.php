@@ -36,6 +36,7 @@ if (empty($_SESSION['this_user_id'])) {
    $readuser20 = $crud->Read("announcements","1");
    $readuser21 = $crud->Read("schemes","1");
    $readuser22 = $crud->Read("honourable","1");
+   $readuser23 = $crud->Read("sliderphotos","1");
    
 }
 ?>

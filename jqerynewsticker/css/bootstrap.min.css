@@ -10,6 +10,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Poppins:400,400i,500,500i,600,600i,700');  
 :root {
  --blue: #2c3e50;
  --indigo: #6610f2;
@@ -4755,7 +4756,11 @@ input[type="button"].btn-block {
  -ms-flex:1 1 auto;
  flex:1 1 auto;
  min-height:1px;
- padding:1.25rem
+ padding:1.25rem;
+ background-image: linear-gradient(to right, #a6d0ca , #b892e6);
+box-shadow: 0 4px 15px 0 rgba(196, 125, 49, 0.75);
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
 }
 .card-title {
  margin-bottom:0.75rem

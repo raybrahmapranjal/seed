@@ -23,7 +23,7 @@
 								<h4 class="widget_title">Explore</h4>
 								 <div class="widget_service">
 									<ul>
-										<li><a href="itilink.php">ITI</a></li>
+										<li><a href="comingSoon.php">ITI</a></li>
 										<li><a href="comingSoon.php" target="_self">Employment</a></li>
 										<li><a href="event.php">News</a></li>
 									
@@ -37,8 +37,8 @@
 								<h4 class="widget_title">Services</h4>
 								 <div class="widget_service">
 									<ul>
-										<li><a href="#">Online admission</a></li>
-										<li><a href="../comingSoon.php" target="_blank">Employment card Register/Renew</a></li>
+										<li><a href="comingSoon.php">Online admission</a></li>
+										<li><a href="comingSoon.php" target="_blank">Employment card Register/Renew</a></li>
 										
 									</ul>
 								 </div>
